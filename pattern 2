@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.io.*;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+
+		Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k =0;
+        
+        for(int i = 1 ; i <=n ; i++){
+            for(int j=n ; j>i ; j--){
+               System.out.print(" "); 
+                k++;
+            }
+        while(k < 4){
+            int num = n-k;
+            System.out.print(num);
+            k++;
+        }
+        
+       
+        
+        }
+	
+    
+    }
+
+}
