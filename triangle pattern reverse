@@ -1,22 +1,38 @@
-Scanner sc = new Scanner(System.in);
+import java.util.Scanner;
+import java.io.*;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+
+		Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int count=0;
+        int count = 0,k=0;
         
         for(int i = 1 ; i <= n ; i++){
             
-           
-            count++;
             for(int space = 1 ; space <= n-1 ; space++){
               
-                System.out.print(" ");  
+                System.out.print(" "); 
+               count++;
             }
         
-            for(int k = i ; k <= count+1 ; k++)
-                System.out.print(k);
+            while(k !=2*i){
+                if(count <= n-1){
+            System.out.print((i+k));
+            count++;
             
-        }
-        
+            }
+           k++;
+            }
+        }                     
           System.out.println();
+        
     }
-
 }
+
