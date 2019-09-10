@@ -1,0 +1,22 @@
+Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int count=0;
+        
+        for(int i = 1 ; i <= n ; i++){
+            
+           
+            count++;
+            for(int space = 1 ; space <= n-1 ; space++){
+              
+                System.out.print(" ");  
+            }
+        
+            for(int k = i ; k <= count+1 ; k++)
+                System.out.print(k);
+            
+        }
+        
+          System.out.println();
+    }
+
+}
