@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+import java.lang.Math;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        
+        double sqrt1 = Math.sqrt(n);
+        System.out.println(Math.round(sqrt1));
+          
+	}
+}
