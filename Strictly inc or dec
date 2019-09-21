@@ -25,7 +25,11 @@ public class Main {
            if (arr[0] >= arr[1] && arr[n-2] >=arr[n-1])
                 System.out.println("true");
      
-        }        
+        } 
+	
+	else 
+	
+	System.out.println("false");
   
     }
 }
